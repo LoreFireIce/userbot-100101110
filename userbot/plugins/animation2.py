@@ -7,7 +7,7 @@ import random, re
 from collections import deque
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 
-@borg.on(admin_cmd(pattern=f"smoon", outgoing=True))
+@borg.on(admin_cmd(pattern=f"lune", outgoing=True))
 
 async def _(event):
 
@@ -21,9 +21,9 @@ async def _(event):
 
     #input_str = event.pattern_match.group(1)
 
-    #if input_str == "smoon":
+    #if input_str == "lune":
 
-    await event.edit("smoon..")
+    await event.edit("lune..")
 
     animation_chars = [
 
@@ -47,7 +47,7 @@ async def _(event):
 
 
 
-@borg.on(admin_cmd(pattern=f"tmoon", outgoing=True))
+@borg.on(admin_cmd(pattern=f"luna", outgoing=True))
 
 async def _(event):
 
@@ -61,9 +61,9 @@ async def _(event):
 
    # input_str = event.pattern_match.group(1)
 
-    #if input_str == "tmoon":
+    #if input_str == "luna":
 
-    await event.edit("tmoon")
+    await event.edit("luna")
 
     animation_chars = [
 
@@ -172,7 +172,7 @@ async def _(event):
 
             await event.edit(animation_chars[i % 117])
             
-@borg.on(admin_cmd(pattern=f"plane", outgoing=True))
+@borg.on(admin_cmd(pattern=f"aereo", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -244,7 +244,7 @@ async def _(event):
 		await event.edit("".join(deq))
 		deq.rotate(1)        
         
-@borg.on(admin_cmd(pattern=f"snake", outgoing=True))
+@borg.on(admin_cmd(pattern=f"serpente", outgoing=True))
 
 async def _(event):
 
@@ -256,7 +256,7 @@ async def _(event):
 
     animation_ttl = range(0, 27)
 
-    await event.edit("snake..")
+    await event.edit("serpente..")
 
     animation_chars = [
 
@@ -321,13 +321,13 @@ async def _(event):
             await event.edit(animation_chars[i % 27])  
             
             
-@borg.on(admin_cmd(pattern=f"solarsystem", outgoing=True))
+@borg.on(admin_cmd(pattern=f"sistemasolare", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
     animation_interval = 0.1
     animation_ttl = range(0, 549755813888)
-    await event.edit("solarsystem")
+    await event.edit("sistemasolare")
     animation_chars = [
             "`◼️◼️◼️◼️◼️\n◼️◼️◼️◼️☀\n◼️◼️🌎◼️◼️\n🌕◼️◼️◼️◼️\n◼️◼️◼️◼️◼️`",
             "`◼️◼️◼️◼️◼️\n🌕◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️☀\n◼️◼️◼️◼️◼️`",
